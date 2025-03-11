@@ -1,5 +1,4 @@
 #include<iostream>
-#include<deque>
 using namespace std;
 template <class T>
 class queue{
@@ -49,10 +48,6 @@ public:
 
     bool empty(){
         return rear==-1;
-    }
-
-    int size() {
-        return rear+1;
     }
 
     T Front() {
