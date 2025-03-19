@@ -68,13 +68,13 @@ public:
 
 
 int main() {
-  Heap<int> h;
-  h.push(12);
-  h.push(5);
-  h.push(8);
-  h.push(3);
-  vector<int> v = {2,45,56,12,8,9};
-  Heap<int> h1(v.begin(),v.end());
+  Heap<char> h;
+  h.push('s');
+  h.push('r');
+  h.push('a');
+  h.push('g');
+  vector<int> v = {2,45,22,12,8,9,33,35,36};
+  Heap<int,greater<int>> h1(v.begin(),v.end());
   while(!h1.empty()){
     cout<<h1.pop()<<" ";
   }
